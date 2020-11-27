@@ -1,0 +1,13 @@
+# Installed deps
+deps/*
+
+# Discordia
+discordia.log
+gateway.json
+
+# Config
+config.lua
+
+# SQLite
+sqlite3.dll
+master.db
