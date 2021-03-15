@@ -27,7 +27,7 @@ CLIENT:on("heartbeat", function()
 			for k, v in pairs(channelsObj) do
 				local embed = {}
 				-- Base information
-				embed.title = "**Current XRP Value**"
+				embed.title = "**Current "..string.upper(currency).." Value**"
 				embed.timestamp = os.date("!%Y-%m-%dT%TZ")
 				embed.footer = {
 					icon_url = CLIENT.user:getAvatarURL(),
