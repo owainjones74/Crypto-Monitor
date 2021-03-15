@@ -18,7 +18,7 @@ CLIENT:on("heartbeat", function()
 			local currency = settings.Get(v.id, "currency", "USD")
 	
 			if not buyAmountCache[currency] then
-				buyAmountCache[currency], sellAmountCache[currency] = coinbase.GetBuy("XRP", currency), coinbase.GetSell("XRP", currency)
+				buyAmountCache[currency], sellAmountCache[currency] = coinbase.GetBuy(currency, currency), coinbase.GetSell(currency, currency)
 			end
 	
 			local buyAmount, sellAmount = buyAmountCache[currency], sellAmountCache[currency]
